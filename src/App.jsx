@@ -1,35 +1,80 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import './App.css' 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div id="card-area" className=" text-white p-5">
+        <div className="wrapper">
+          <div className="box-area grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
+            <div className="box relative rounded-lg overflow-hidden">
+              <img
+                src="https://images.pexels.com/photos/4568137/pexels-photo-4568137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+               classname='block duration-500'
+              />
+              <div className="overlay">
+                <h1>Hello</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam excepturi pariatur dicta quia, qui labore porro ipsa?
+                  Rem accusamus ipsa non sapiente dolores odio, dolorum id ea,
+                  cupiditate sequi possimus.
+                </p>
+              </div>
+            </div>
+
+            <div className="box relative rounded-lg overflow-hidden">
+              <img
+                src="https://images.pexels.com/photos/4568137/pexels-photo-4568137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+               classname='block duration-500'
+              />
+              <div className="overlay">
+                <h1>Hello</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam excepturi pariatur dicta quia, qui labore porro ipsa?
+                  Rem accusamus ipsa non sapiente dolores odio, dolorum id ea,
+                  cupiditate sequi possimus.
+                </p>
+              </div>
+            </div>
+
+            <div className="box relative rounded-lg overflow-hidden">
+              <img
+                src="https://images.pexels.com/photos/4568137/pexels-photo-4568137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+               classname='block duration-500'
+              />
+              <div className="overlay">
+                <h1>Hello</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam excepturi pariatur dicta quia, qui labore porro ipsa?
+                  Rem accusamus ipsa non sapiente dolores odio, dolorum id ea,
+                  cupiditate sequi possimus.
+                </p>
+              </div>
+            </div>
+
+            <div className="box relative rounded-lg overflow-hidden">
+              <img
+                src="https://images.pexels.com/photos/4568137/pexels-photo-4568137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+               classname='block duration-500'
+              />
+              <div className="overlay">
+                <h1>Hello</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam excepturi pariatur dicta quia, qui labore porro ipsa?
+                  Rem accusamus ipsa non sapiente dolores odio, dolorum id ea,
+                  cupiditate sequi possimus.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
